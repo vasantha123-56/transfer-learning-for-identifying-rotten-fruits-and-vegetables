@@ -102,7 +102,7 @@ elif(app_mode=="Prediction"):
         
         # Get model predictions (probabilities)
         def model_prediction_with_probs(test_image):
-            model = tf.keras.models.load_model("trained_model/trained_model.h5")
+            model = tf.keras.models.load_model("trained_model/trained_model (1).h5")
             image = tf.keras.preprocessing.image.load_img(test_image, target_size=(64,64))
             input_arr = tf.keras.preprocessing.image.img_to_array(image)
             input_arr = np.array([input_arr]) #convert single image to batch
@@ -136,4 +136,16 @@ elif(app_mode=="Prediction"):
                 st.write("Bad: {:.2f}%".format(bad_prob))
 
 
-            
+    
+    
+    
+    
+    #####   Download the trained_model.h5 file == https://drive.google.com/file/d/17pG_EQ3o1-YreRYV09VXzjA6w7b3-fpZ/view?usp=drivesdk
+    
+    ####    Labels text file  ==  https://drive.google.com/file/d/19s8mp9K3j-XZQXJ1HHWoN2hzZbAI6o60/view?usp=drivesdk
+    
+    ####    Video Link ==  https://drive.google.com/file/d/1a5jZIL8ygLnEuCPbm7IiXvpAvcAQjFSq/view?usp=drivesdk
+    
+    ###     Final Report  ==  https://drive.google.com/file/d/19kmX94Y3Nn-fsX24Y8OpDFUrT1GlG7Ci/view?usp=drivesdk
+    
+    
